@@ -103,12 +103,12 @@ public class AddCriminals {
 		
 		// Build the item
 		Item item = new Item()
-		    .withPrimaryKey("Prisoner#", 4)
-		    .withString("1 Name", "")
-		    .withString("2 Gender", "F")
-		    .withString("3 Birthday", "1986")
-		    .withString("4 Age", "unknown");
-
+		    .withPrimaryKey("Prisoner#", 39)
+		    .withString("1 Name", "Marwan al-Shehhi")
+		    .withString("2 Gender", "M")
+		    .withString("3 Birthday", "May 9, 1978")
+		    .withString("4 Age", "23 (dead)");
+		
 		// Write the item to the table
 		PutItemOutcome outcome = table.putItem(item);
 		
