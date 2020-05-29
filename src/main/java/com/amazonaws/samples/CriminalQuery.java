@@ -50,11 +50,11 @@ public class CriminalQuery {
 		{
 			System.out.println("These are the criminals found with the name " + name);
 			
-			System.out.println(thing.get("name"));
+			System.out.println(thing.get("1 Name"));
 			System.out.println(thing.get("Prisoner#"));
-			System.out.println(thing.get("Gender"));
-			System.out.println(thing.get("Birthday"));
-			System.out.println(thing.get("Age"));
+			System.out.println(thing.get("2 Gender"));
+			System.out.println(thing.get("3 Birthday"));
+			System.out.println(thing.get("4 Age"));
 			
 		}
 		
@@ -95,7 +95,7 @@ public class CriminalQuery {
 	    	// Query by name
 		    for(int x = 1; x <= result.getCount(); x++)
 		    {
-		        item = table.getItem("name", fieldname);
+		        item = table.getItem("1 Name", fieldname);
 	
 		    	itemList.add(item);
 	
@@ -107,7 +107,7 @@ public class CriminalQuery {
 	    	
 	    	for(int x = 1; x <= result.getCount(); x++)
 		    {
-		        item = table.getItem("prisonerNumber", fieldname);
+		        item = table.getItem("Prisoner#", fieldname);
 	
 		    	itemList.add(item);
 	
@@ -117,7 +117,7 @@ public class CriminalQuery {
 	    	//Query by gender
 	    	for(int x = 1; x <= result.getCount(); x++)
 	    	{
-	    		item = table.getItem("Gender", fieldname);
+	    		item = table.getItem("2 Gender", fieldname);
 	    		itemList.add(item);
 	    	}
 	    	break;
@@ -126,7 +126,7 @@ public class CriminalQuery {
 	    	//Query by Birthday
 	    	for(int x = 1; x <= result.getCount(); x++)
 	    	{
-	    		item = table.getItem("Birthday", fieldname);
+	    		item = table.getItem("3 Birthday", fieldname);
 	    		itemList.add(item);
 	    	}
 	    	break;
@@ -136,12 +136,14 @@ public class CriminalQuery {
 	    	
 	    	for(int x = 1; x <= result.getCount(); x++)
 	    	{
-	    		item = table.getItem("Age", fieldname);
+	    		item = table.getItem("4 Age", fieldname);
 	    		itemList.add(item);
 	    	}
 	    	break;
 
 	    }
+	    
+	    
 	    
 	   /* TableDescription desc = table.describe();
 	    System.out.print(desc);
