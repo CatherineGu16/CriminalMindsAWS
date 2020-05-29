@@ -92,7 +92,7 @@ public class CriminalQuery {
 	    {
 	    
 	    case 1:
-	    	// Query by name
+	    	// Query by Name
 		    for(int x = 1; x <= result.getCount(); x++)
 		    {
 		        item = table.getItem("1 Name", fieldname);
@@ -102,7 +102,7 @@ public class CriminalQuery {
 		    }
 		    break;
 	    case 2:
-	    	// Query by prisoner ID
+	    	// Query by Prisoner#
 	    	int prisonerID = Integer.parseInt(fieldname);
 	    	
 	    	for(int x = 1; x <= result.getCount(); x++)
@@ -114,7 +114,7 @@ public class CriminalQuery {
 		    }
 		    break;
 	    case 3:
-	    	//Query by gender
+	    	//Query by Gender
 	    	for(int x = 1; x <= result.getCount(); x++)
 	    	{
 	    		item = table.getItem("2 Gender", fieldname);
@@ -412,6 +412,7 @@ public class CriminalQuery {
 				
 		
 		return ret;
+		//
 	}
 */
 	

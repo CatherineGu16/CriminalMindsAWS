@@ -1,4 +1,5 @@
 package com.amazonaws.samples;
+//method to delete criminals from UI
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
@@ -71,6 +72,7 @@ public class CriminalDelete {
         catch (Exception e) {
             System.err.println("Unable to delete item: " + prisonerName + " " + prisonerNumber);
             System.err.println(e.getMessage());
+            //
         }
     }
 }

@@ -1,4 +1,5 @@
 package com.amazonaws.samples;
+//method to add criminals to UI
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -109,5 +110,6 @@ public class CriminalAdd {
 		
 		//Display
 		System.out.println("Added Criminal");
+		//
 	}
 }
