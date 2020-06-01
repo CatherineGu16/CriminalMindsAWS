@@ -32,20 +32,14 @@ public class DisplayBurglars {
 	public static void main(String args[])
 	{
 		ArrayList<Item> resultquery; // = connect();
-		
+
 		System.out.print("Querying the database");
 		
 		// Build a UI to let user type in name
 		String ID = "B";
 		
 		resultquery = queryCriminal(ID);
-		// 1 - query by name
-		// 2 - query by prisoner number
-		// 3 - query by gender
-		// 4 - query by birthday
-		// 5 - query by age
-		
-		
+			
 		for (Item thing:resultquery)
 		{
 			System.out.println("Burglars:");
@@ -87,7 +81,6 @@ public class DisplayBurglars {
 	    Table table = dynamoDB.getTable("Criminals");
 	    ScanRequest scanRequest = new ScanRequest()
 	    	    .withTableName("Criminals");
-
 
 	    ScanResult result = client.scan(scanRequest);
 	    Item item;
