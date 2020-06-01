@@ -27,7 +27,7 @@ import java.util.Random;
 
 import java.util.LinkedList;
 
-public class DisplayBurglars {
+public class DisplaySK {
 
 	public static void main(String args[])
 	{
@@ -35,13 +35,13 @@ public class DisplayBurglars {
 
 		System.out.print("Querying the database");
 
-		String ID = "B";
+		String ID = "SK";
 		
 		resultquery = queryCriminal(ID);
 			
 		for (Item thing:resultquery)
 		{
-			System.out.println("Burglars:");
+			System.out.println("Serial Killers:");
 			
 			System.out.println(thing.get("Prisoner#"));
 			System.out.println(thing.get("1 Name"));
@@ -50,7 +50,7 @@ public class DisplayBurglars {
 			System.out.println(thing.get("4 Age"));
 			System.out.println(thing.get("5 ID"));
 			System.out.println(thing.get("Crime for Trial"));
-			System.out.println(thing.get("B DollarValue"));
+			System.out.println(thing.get("SKT #victims"));
 			System.out.println(thing.get("BSK State"));
 			System.out.println(thing.get("BSK Date"));
 			System.out.println(thing.get("BSK Penalty"));	
